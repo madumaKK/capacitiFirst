@@ -1,13 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-*{
+body{
     margin: 0;
     padding: 0;
+    font-family: 'ubuntu', sans-serif;
+}
+*{
     box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
     text-decoration: none;
 }
+.main{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top left;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -15,14 +49,14 @@
 }
 
 /* Navbar styling*/
-.navbar{
+/* .navbar{
     position: fixed;
     width: 100%;
     font-family: 'ubuntu', sans-serif;
 }
-.navbar .sticky{
-    padding: 35px 0;
-    background: rgb(194, 62, 211);
+.navbar.sticky{
+    padding: 15px 0;
+    background: rgb(130, 236, 213);
 }
 .navbar .max-width{
     display: flex;
@@ -31,12 +65,16 @@
 }
 
 .navbar .logo a{
-    color: rgb(14, 13, 13);
+    color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
 .navbar .logo a span{
     color: crimson;
+    transition: color 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff
 }
 .navbar .menu li{
     list-style: none;
@@ -44,7 +82,7 @@
 }
 
 .navbar .menu li a{
-    color: rgb(3, 3, 3);
+    color: #fff;
     font-size: 27px;
     font-weight: 500;
     margin-left: 25px;
@@ -53,14 +91,26 @@
 .navbar .menu li a:hover{
     color: crimson;
 }
+.navbar.sticky .menu li a:hover{
+    color: rgb(14, 13, 13);
+} */
+/* home bars */
+
+/* .menu-btn{
+    color: rgb(14, 13, 13);
+    font-size: 27px;
+    cursor: pointer;
+    display: none;
+} */
 
 /* home section */
 
-.home{
+/* .home{
     display: flex;
-    background: url("photos/RSQ8.jpg") no-repeat center;
+    
+    background: rgb(55, 123, 158);
     height: 100vh;
-    color: rgb(34, 55, 87);
+    color: rgb(14, 13, 13);
     min-height: 500px;
     font-family: 'ubuntu', sans-serif;
 }
@@ -79,4 +129,47 @@
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+} */
+
+/* responsive media */
+/* @media (max-width:1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
 }
+@media (max-width:850px){
+    
+}
+@media (max-width:850px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 200vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+}  */
