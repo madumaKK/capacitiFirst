@@ -57,6 +57,8 @@ nav ul li a:hover{
     box-shadow: 5px 10px 30px rgba(90, 118, 253, 0.5);
     transition: all ease 0.2s;
 }
+
+/* Home page */
 .home-content{
     display: flex;
     justify-content: space-around;
@@ -110,7 +112,7 @@ nav ul li a:hover{
     transition: all ease 0.3s;
 }
 
-
+/* contant page */
 .contact{
     position: relative;
     min-height: 100vh;
@@ -214,19 +216,78 @@ nav ul li a:hover{
     font-size: 12px;
     transform: translateY(-20px);
 }
-.contactForm .inputBox[type="submit"]{
-    width: 100px;
+.contactForm .inputBox input[type="submit"]{
+    width: 5px 0;
     background: #1bee3e;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
 }
+/* trying to get the screen to a fixed of 850px, and not to 
+congest the information when gets below 850px  */
+/* if can do it */
+@media (max-width:850) {
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}
 
+/* Social media icons for contacts page */
+.main .social{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 0px;
+    /* border-top: 1px solid #00bcd4; */
+    margin-top: 2%;
+}
+.main .social h6{
+    font-size: 16px;
+}
+.main .social a{
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    line-height: 39px;
+    border-radius: 50%;
+    border: 2px solid rgb(82, 236, 133);
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    /* color: rgba(255, 255, 255, 0.4); */
+    /* background: #000; */
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+    color: #000;
+}
+.main .social a:hover{
+    opacity: 0.9;
+    box-shadow: 0px 1px 3px 2px rgba(255, 255, 255, 0.9);
+}
+.main .copyright{
+    text-align: center;
+    padding: 24px;
+    font-weight: 500px;
+    opacity: 0.8;
+    font-size: 16px;
+    margin-bottom: 0px;
+    bottom: 0%;
+}
 
-
-
-
-
+/* i'm try to get the copy right to the center
+ of Home,About and Gallery */
+ /* if can be able to do i'd appriciate  */
+.footer{
+    position: fixed;bottom: 0;
+    text-align: center;
+}
 
 
 
